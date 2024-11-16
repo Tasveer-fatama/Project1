@@ -60,9 +60,9 @@ const Login = () => {
           }}
         ></div>
         <div className="w-full p-8 lg:w-1/2">
-          <h1 className="text-xl text-yellow-500 text-center">Welcome back!</h1>
+          <h1 className="text-xl text-yellow-600 text-center">Welcome back!</h1>
           <form className="mt-4" onSubmit={loginForm.handleSubmit}>
-            <label className="block text-yellow-500 text-sm font-bold mb-2">
+            <label className="block text-yellow-500 text-sm font-bold mb-3">
               Email Address
             </label>
             <input

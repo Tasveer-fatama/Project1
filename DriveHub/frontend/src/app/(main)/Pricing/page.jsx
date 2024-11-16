@@ -121,7 +121,7 @@ const CarList = () => {
     <div className="bg-black">
       <div className="grid grid-cols-12">
         <div className="col-span-2">
-          <div className="p-4 bg-yellow-300">
+          <div className="p-4 bg-yellow-400">
             <h3 className="text-lg font-semibold mb-2">Filter Cars</h3>
             <div className="mb-4">
               <label className="block text-gray-700 font-semibold mb-1">Price:</label>
