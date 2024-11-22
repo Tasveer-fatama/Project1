@@ -3,6 +3,7 @@
 import { IconCircleCheck, IconCircleX } from "@tabler/icons-react";
 import React, { useEffect, useRef, useState } from "react";
 import { useLocation } from "next/navigation";
+import { Link } from "react-router-dom";
 
 const ThankYou = () => {
   const hasRun = useRef();
@@ -106,7 +107,7 @@ const ThankYou = () => {
                   d="M7 16l-4-4m0 0l4-4m-4 4h18"
                 />
               </svg>
-              <button className="text-sm font-medium">Home</button>
+              <button  className="text-sm font-medium"><a  href="/Header">Home</a></ button>
             </a>
           </div>
         </div>
