@@ -26,7 +26,7 @@ const CarList = () => {
   return (
     <div ClassName={{}} 
      style={{ backgroundImage: `url()` }}>
-      <div className="container">
+      <div className="container pt-16">
         {/* Heading */}
         <h1
           data-aos="fade-up"
@@ -57,7 +57,7 @@ const CarList = () => {
                   <h1 className="text-primary font-semibold">{data.name}</h1>
                   <div className="flex justify-between items-center text-xl font-semibold">
                     <p>${data.price}/Day</p>
-                    <a href="#">Details</a>
+                    <a href="/Pricing">Details</a>
                   </div>
                 </div>
                 <p className="text-xl font-semibold absolute top-0 left-3">
@@ -70,7 +70,7 @@ const CarList = () => {
         {/* End of car listing */}
         <div className="grid place-items-center mt-8">
           <button data-aos="fade-up" className="button-outline">
-            Get Started
+          <a href="/Pricing">  Get Started</a>                         
           </button>
         </div>
       </div>

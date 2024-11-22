@@ -10,9 +10,9 @@ const Knowmore = () => {
 KNOWMORE
       </h2>
       <p className="mb-4">
-      [DriveHub] was founded in [2024] by a group of travel enthusiasts who shared a common passion: exploring the world on their own terms. We were tired of the limitations of public transportation and the rigidity of guided tours. We craved the freedom to go wherever we wanted, whenever we wanted, and to experience the journey as much as the destination.
+      DriveHub was founded in 2024 by a group of travel enthusiasts who shared a common passion: exploring the world on their own terms. We were tired of the limitations of public transportation and the rigidity of guided tours. We craved the freedom to go wherever we wanted, whenever we wanted, and to experience the journey as much as the destination.
 
-That's why we started [DriveHub]. We wanted to create a car rental service that was more than just a transaction. We wanted it to be an enabler of adventure, a key that unlocks new experiences and memories
+That's why we started DriveHub. We wanted to create a car rental service that was more than just a transaction. We wanted it to be an enabler of adventure, a key that unlocks new experiences and memories
       </p>
 
     </div>

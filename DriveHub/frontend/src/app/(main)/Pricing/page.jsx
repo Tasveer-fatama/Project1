@@ -5,19 +5,31 @@ import Link from 'next/link';
 
 const CarCard = ({ car }) => {
   return (
-   <div className="bg-black">
-    <div className="max-w-xs rounded overflow-hidden shadow-lg bg-white">
-      <img className="w-full h-56 object-contain" src={'http://localhost:5000/' + car.image} alt={car.name} />
-      <div className="px-6 py-4">
-        <p className='font-bold text-slate-500'>{car.type}</p>
-        <p className='font-bold text-slate-800 text-lg'>{car.brand} {car.model} ({car.year}) </p>
-        <p className='mt-4 text-xl'><strong>Price:</strong> {car.price}</p>
-        <div className="mt-4">
-          <Link href={'/BookingForm/' + car._id} className="w-full bg-black text-white py-2 px-4 rounded">Book Now</Link>
-        </div>
-      </div>
-    </div>
-    </div>
+   <div className=' container mx-auto p-4'>
+     <div className="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg gap-6 p-4">
+  <div className="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
+    <img
+      src={'http://localhost:5000/' + car.image}
+      alt={car.name}
+    />
+  </div>
+  <div className="p-4">
+    <h6 className="mb-2 text-slate-800 text-xl font-semibold">
+     {car.type}
+    </h6>
+    <p className="text-slate-600 leading-normal font-light">
+    {car.brand} {car.model} ({car.year}) 
+    </p>
+    <p className="text-slate-600 leading-normal font-light">
+    <strong>Price:</strong> {car.price}
+    </p>
+    <Link href={'/BookingForm/' + car._id}  className="py-1 px-3 rounded leading-normal font-light mt-4 w-full bg-black text-white ">
+    Book Now
+    </Link>
+  </div>
+ 
+</div>
+   </div>
   );
 }
 
@@ -409,7 +421,7 @@ const CarList = () => {
           <div className="flex justify-end">
             <button onClick={handleResetFilters} className="m-2">Reset</button>
           </div>
-          <div className="grid grid-cols-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {displayCars()}
           </div>
         </div>
